@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de cocina</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="wrapper__menu">
+        <div class="menu__title">RECETAS DE PASTAS</div>
+        <nav class="menu">
+            <div class="menu__item" onclick="goToElement('receta1')">Plato 1</div>
+            <div class="menu__item" onclick="goToElement('receta2')">Plato 2</div>
+            <div class="menu__item" onclick="goToElement('receta3')">Plato 3</div>
+        </nav>
+    </div>
+    
+
+    <div id="receta1" class="item">
+        <div class="item__image">
+            <img src="./img1.jpg" alt=""/>
+        </div>
+        <div class="item__detail">
+            <div class="item__detail__title">CANELONES</div>
+            <div class="item__detail__ingredientes">
+                <div>- Harina 300 g.</div>
+                <div>- Huevos 2 unidades</div>
+                <div>- Sal 1 pizca</div>
+            </div>
+            <div class="item__detail__preparacion">
+                En una cacerola con leche prepará la Salsa Blanca Alicante como se indica en el envase.
+                En una sartén caliente rehogá a fuego suave la cebolla previamente picada hasta que se transparente, unos 5 minutos aproximadamente. Incorporá la carne picada y cocinala hasta que cambie de color, unos 5 minutos aproximadamente, cuando eso pase, agregá el tomate picado, el Caldo de Verduras y el Laurel en Hojas Alicante junto al agua.
+            </div>
+        </div>
+    </div>
+
+    <div id="receta2" class="item item--reverse">
+        <div class="item__image">
+            <img src="./img2.jpg.jpg" alt=""/>
+        </div>
+        <div class="item__detail">
+            <div class="item__detail__title">RAVIOLES</div>
+            <div class="item__detail__ingredientes">
+                <div>- 500 gramos de ricota.</div>
+                <div>- 200 gramos de jamon</div>
+                <div>- Sal y pimienta</div>
+                <div>- 70 gramos de queso duro tipo Reggiano</div>
+            </div>
+            <div class="item__detail__preparacion">
+                Cortar con cuchillo o cortapastas cada ravioli, separarlos y presionar los bordes con un tenedor.
+                Poner abundante agua en una cacerola grande y cuando hierva meter los raviolis y cocinarlos por 4 o 5 minutos.
+            </div>
+        </div>
+    </div>
+
+    <div id="receta3" class="item">
+        <div class="item__image">
+            <img src="./img3.jpg" alt="">
+        </div>
+        <div class="item__detail">
+            <div class="item__detail__title">FIDEOS CON CREMA</div>
+            <div class="item__detail__ingredientes">
+                <div>- 1 Cebolla de verdeo</div>
+                <div>- Sal y agua</div>
+                <div>- Leche y aceite</div>
+                <div>- Crema de leche</div>
+            </div>
+            <div class="item__detail__preparacion">
+                Cuando esté lista la crema apagar el fuego, mientras tanto ir revolviendo los fideos hasta que estén al dente.
+                Cuando los fideos estén listos colarlos y servir con la crema, le podes poner queso de rallar si les gustan!!!
+                Una vez que estén doradas le agregamos la crema de leche, pueden usar queso crema que también queda riquísima! 
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">Señorita Pri todos los derechos reservados uwu</footer>
+
+</body>
+
+<!-- ⠄⠄⠄⢰⣧⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⢸⡇⠄⠄ ⠄⠄⠄⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄ ⠄⠄⢀⡋⣡⣴⣶⣶⡀ ⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄ ⠄⠄⢸⣇⠻⣿⣿⣿⣧⣀⢀⣠⡌⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⣿⣿⠄ ⠄⢀⢸⣿⣷⣤⣤⣤⣬⣙⣛⢿⣿⣿⣿⣿⣿⣿⡿⣿⣿⡍ ⢀⣤⣄⠉⠋⣰ ⠄⣼⣖⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⢇⣿⣿⡷⠶⠶⢿⣿⣿⠇⢀⣤ ⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣷⣶⣥⣴⣿⡗ ⢀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄ ⢸⣿⣦⣌⣛⣻⣿⣿⣧⠙⠛⠛⡭⠅⠒⠦⠭⣭⡻⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄ ⠘⣿⣿⣿⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠹⠈⢋⣽⣿⣿⣿⣿⣵⣾⠃⠄ ⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⠄⣴⣿⣶⣄⠄⣴⣶⠄⢀⣾⣿⣿⣿⣿⣿⣿⠃⠄⠄ ⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⠄⣿⣿⡀⣾⣿⣿⣿⣿⣛⠛⠁⠄⠄⠄ ⠄⠄⠄⠄⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁⠄⠄⠄⠄⠄ ⠄⠄⠄⠄⠄⠄⠄⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁⠄⠄⠄⠄⠄⢀⣠⣴ ⣿⣿⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿⣿⣿
+-->
+</html>

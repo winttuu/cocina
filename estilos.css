@@ -1,0 +1,104 @@
+body {
+    padding: 0; 
+    border: 0;
+    margin: 0;
+}
+
+.wrapper__menu {
+    background-color:pink;
+    position: sticky;
+    top: 0;
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__title {
+    padding: 1em;
+    font-size: 1em; 
+    font-weight:bolder;
+}
+
+.menu__item {
+    padding: 1em; 
+}
+
+.item {
+    border: 1px solid #eaeaea;
+    max-width: 800px;
+}
+
+.item__image {
+    height: 100vw;
+}
+
+.item__image img {
+    width: 100%;
+    height: 100%;   
+}
+
+.item__detail {
+    color: #444;
+}
+
+.item__detail__title {
+    padding: 1em;
+    font-size: 1.5em; 
+    font-weight: bold;
+}
+
+.item__detail__ingredientes {
+    padding: 1em;
+}
+
+.item__detail__preparacion {
+    padding: 1em;
+    text-align: justify;
+}
+
+.footer {
+    padding: 1em;
+    background-color: pink;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    
+    .wrapper__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .menu__title {
+        padding: 1em;
+        font-size: 1.3em; 
+        font-weight: bold;
+    }
+    
+
+    .item {
+        display: flex;
+        margin: 1em auto;
+    }
+
+    .item--reverse {
+        flex-direction: row-reverse;
+    }
+
+    .item__image {
+        width: 300px;
+        height: 300px;
+        min-width: 300px;
+    }
+}
